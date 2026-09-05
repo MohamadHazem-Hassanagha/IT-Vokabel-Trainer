@@ -273,8 +273,9 @@ button:active {
     }
 
     h1 {
-        font-size: 24px;
-        letter-spacing: 2px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        white-space: nowrap;
     }
 
     .vocab-header {
