@@ -264,4 +264,74 @@ button:active {
     color: #569cd6;
     font-size: 12px;
 }
+@media (max-width: 600px) {
 
+    body {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .vocab-header {
+        width: 100%;
+    }
+
+    .vocab-card {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .vocab-card::before {
+        left: 55px;
+    }
+
+    #technology,
+    #word {
+        font-size: 20px;
+    }
+
+    #translation {
+        font-size: 18px;
+    }
+
+    #arabicTranslation {
+        font-size: 17px;
+    }
+
+    #explanation,
+    #example {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
+    .code-tabs {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .stats {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .answer-section {
+        flex-direction: column;
+    }
+
+    #answerInput,
+    #checkButton {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
