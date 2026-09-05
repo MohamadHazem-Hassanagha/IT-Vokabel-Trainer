@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+    <title>Vokabel Trainer</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+
+ <body>
+
+    <h1> < > IT Vokabel Trainer < / > </h1>
+
+  <div class="vocab-header">
+    
+   <div class="code-tabs">
+
+    <div class="code-tab html-tab">
+        <span class="tab-icon">&lt;&gt;</span>
+        <span>index.html</span>
+        <span class="tab-close">X</span>
+    </div>
+
+    <div class="code-tab javascript-tab">
+        <span class="tab-icon">JS</span>
+        <span>script.js</span>
+        <span class="tab-close">X</span>
+    </div>
+
+    <div class="code-tab css-tab">
+        <span class="tab-icon">#</span>
+        <span>style.css</span>
+        <span class="tab-close">X</span>
+    </div>
+
+   </div>
+
+     <div class="vocab-card">
+
+        <span id="technology"></span>
+
+        <p id="word"></p>
+        <p id="translation"></p>
+        <p id="arabicTranslation"></p>
+        <p id="explanation"></p>
+        <p id="example"></p>
+     </div>
+  </div>
+    
+  <div class="stats">
+
+    <div class="buttons">
+        <button id="startButton">Nächste Vokabel</button>
+        <button id="answerButton">Antwort anzeigen</button>
+        <button id="resetButton">Statistik zurücksetzen</button>
+    </div>
+
+    <div class="statistics">
+        <p>Richtig: <span id="correctAnswers">0</span></p>
+        <p>Falsch: <span id="wrongAnswers">0</span></p>
+        <p>Erfolg: <span id="successRate">0</span>%</p>
+    </div>
+
+   </div>
+
+   <div class="answer-section">
+
+    <input id="answerInput" type="text" placeholder="Deutsche Übersetzung">
+    <button id="checkButton">Antwort überprüfen</button>
+
+   </div>
+    <script src ="script.js"></script
+</body>
+</html>
