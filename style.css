@@ -65,7 +65,8 @@ h1 {
     color: #ce9178;
     direction: rtl;
     margin-bottom: 10px;
-    padding-left: 35px;
+    padding-left: 0;
+    text-align: center;
 }
 #explanation {
     font-size: 17px;
@@ -267,72 +268,127 @@ button:active {
 @media (max-width: 600px) {
 
     body {
+        width: auto;
         max-width: 100%;
-        margin: 20px auto;
+        margin: 15px auto;
         padding: 10px;
+        box-sizing: border-box;
     }
 
     h1 {
         font-size: 20px;
         letter-spacing: 1px;
-        white-space: nowrap;
+        white-space: normal;
+        overflow-wrap: anywhere;
     }
 
     .vocab-header {
         width: 100%;
+        max-width: 100%;
+        margin-top: 25px;
     }
 
     .vocab-card {
-        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 12px;
         margin: 20px 0;
     }
 
     .vocab-card::before {
-        left: 55px;
+        left: 42px;
     }
 
     #technology,
     #word {
-        font-size: 20px;
+        font-size: 19px;
+        overflow-wrap: anywhere;
     }
 
     #translation {
         font-size: 18px;
+        overflow-wrap: anywhere;
     }
 
     #arabicTranslation {
         font-size: 17px;
+        padding-left: 0;
+        text-align: center;
+        overflow-wrap: anywhere;
     }
 
     #explanation,
     #example {
         font-size: 15px;
-        padding-left: 20px;
+        padding-left: 15px;
+        padding-right: 5px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
     }
 
     .code-tabs {
+        width: 100%;
         max-width: 100%;
         overflow-x: auto;
+        box-sizing: border-box;
+        transform: translateY(15px);
+    }
+
+    .code-tab {
+        flex-shrink: 0;
     }
 
     .stats {
         width: 100%;
+        max-width: 100%;
         flex-direction: column;
         gap: 15px;
+        box-sizing: border-box;
     }
 
     .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .statistics {
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .answer-section {
         flex-direction: column;
+        width: 100%;
+        gap: 10px;
     }
 
     #answerInput,
     #checkButton {
-        width: 90%;
+        width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
     }
+
+    button {
+        max-width: 100%;
+    }
+}
+/* German mode: hide the additional translation line */
+.german-mode #arabicTranslation {
+    display: none !important;
+}
+
+/* Renumber the explanation and example in German mode */
+.german-mode #explanation::before {
+    content: "4";
+}
+
+.german-mode #example::before {
+    content: "5";
+}
+
+/* Hide the number of the hidden translation line */
+.german-mode #arabicTranslation::before {
+    content: "";
 }
