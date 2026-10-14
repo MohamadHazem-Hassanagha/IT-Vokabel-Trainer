@@ -111,7 +111,7 @@ h1 {
 }
 
 #example::before {
-    content:"6"
+    content: "6";
 }
 
 /* Deutsch: Die Übersetzungszeile wird nicht nummeriert */
