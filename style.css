@@ -326,9 +326,14 @@ button:active {
     }
 
     .code-tabs {
-        max-width: 100%;
-        overflow-x: auto;
-    }
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    transform: translateY(15px);
+}
 
     .stats {
         width: 100%;
