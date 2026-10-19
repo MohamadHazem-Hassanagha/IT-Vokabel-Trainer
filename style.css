@@ -356,9 +356,18 @@ button:active {
         width: 90%;
         box-sizing: border-box;
     }
-    .code-tabs {
-    display: none;
-}
+   .translation-language {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px 0;
+    gap: 5px;
+    font-size: 11px;
+    }
 }
 
 /* Language selection */
