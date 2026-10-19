@@ -326,16 +326,6 @@ button:active {
         padding-left: 20px;
     }
 
-    .code-tabs {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    align-items: center;
-    transform: translateY(15px);
-}
 
 .translation-language {
     position: absolute;
