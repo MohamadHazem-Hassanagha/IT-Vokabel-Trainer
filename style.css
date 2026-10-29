@@ -12,13 +12,39 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-h1 {
+h1.site-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    width: fit-content;
+    max-width: 100%;
+    margin: 35px auto;
+    padding: 18px 28px;
+
+    box-sizing: border-box;
+    border: 2px solid #008cff;
+    border-radius: 18px;
+
+    font-family: "Courier New", monospace;
     font-size: 36px;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: 5px;
-    text-shadow: 0 0 10px #00A8FF;
-    color: #0057D9;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    white-space: nowrap;
+
+    color: #19baff;
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.8);
+
+    box-shadow:
+        0 0 10px rgba(0, 140, 255, 0.6),
+        inset 0 0 10px rgba(0, 140, 255, 0.12);
+}
+
+.title-bracket {
+    color: #008cff;
+    text-shadow: 0 0 12px rgba(0, 140, 255, 0.9);
 }
 .vocab-header {
     width: 800px;
