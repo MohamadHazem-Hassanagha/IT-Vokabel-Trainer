@@ -315,7 +315,7 @@ button:active {
     }
 
    h1.site-title {
-    width: 100%;
+    width: fit-content;
     max-width: 100%;
     margin: 25px auto;
     padding: 14px 8px;
@@ -329,7 +329,6 @@ button:active {
     border-radius: 14px;
     box-sizing: border-box;
 }
-
     .vocab-header {
         width: 100%;
     }
