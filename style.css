@@ -314,10 +314,21 @@ button:active {
         padding: 10px;
     }
 
-    h1 {
-        font-size: 24px;
-        letter-spacing: 2px;
-    }
+   h1.site-title {
+    width: 100%;
+    max-width: 100%;
+    margin: 25px auto;
+    padding: 14px 8px;
+    gap: 8px;
+
+    font-size: clamp(16px, 4.5vw, 24px);
+    letter-spacing: 0;
+    white-space: nowrap;
+
+    border-width: 2px;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
 
     .vocab-header {
         width: 100%;
