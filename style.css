@@ -333,9 +333,11 @@ button:active {
         margin: 20px 0;
     }
 
-    .vocab-card::before {
-        left: 55px;
-    }
+  .vocab-card::before {
+    left: 40px;
+    top: 45px;
+    bottom: 80px;
+}
 
     #technology,
     #word {
@@ -380,8 +382,17 @@ button:active {
         width: 90%;
         box-sizing: border-box;
     }
+    #technology::before,
+#word::before,
+#translation::before,
+#arabicTranslation::before,
+#explanation::before,
+#example::before {
+    left: -15px;
+}
     
 }
+
 
 /* Language selection */
 .translation-language {
