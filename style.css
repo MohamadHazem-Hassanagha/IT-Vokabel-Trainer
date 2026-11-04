@@ -423,6 +423,9 @@ outline: 1px solid #569cd6;
     margin-left: auto;
     padding: 5px;
 }
+    .code-tabs {
+    justify-content: flex-end;
+}
 
 #languageSelect {
     max-width: 95px;
